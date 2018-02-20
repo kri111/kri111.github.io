@@ -86,10 +86,28 @@ $("#button_clear").click(function(){
 });
 
 /* detecting mouse up or down in gesture_area */
-$("#gesture_area").mousedown(function(){
+
+startingXpoint = 0
+startingYpoint = 0
+endingXpoint = 0
+endingYpoint = 0
+
+$("#gesture_area").mousedown(function(event){
+  startingXpoint = event.pageX
+  startingYpoint = event.pageY
   $("#gesture_output").text("mouse down")
 });
 
-$("#gesture_area").mouseup(function(){
-  $("#gesture_output").text("mouse up")
+$("#gesture_area").mouseup(function(event){
+  endingXpoint = event.pageX
+  endingYpoint = event.pageY
+
+  if (endingXpoint > startingXpoint){
+    $("#gesture_output").text("swipe right")
+  }else if (endingXpoint < startingXpoint){
+    $("#gesture_output").text("swipe left")
+  }else{
+    $("#gesture_output").text("mouse up")
+  }
+
 });
