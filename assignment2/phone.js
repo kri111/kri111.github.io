@@ -106,6 +106,10 @@ $("#gesture_area").mouseup(function(event){
     $("#gesture_output").text("swipe right")
   }else if (endingXpoint < startingXpoint){
     $("#gesture_output").text("swipe left")
+  }else if (endingYpoint > startingYpoint){
+    $("#gesture_output").text("swipe down")
+  }else if (endingYpoint < startingYpoint){
+    $("#gesture_output").text("swipe up")
   }else{
     $("#gesture_output").text("mouse up")
   }
