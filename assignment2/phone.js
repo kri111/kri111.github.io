@@ -28,7 +28,7 @@ $("#button_add").click(function(){ //when "button_id" is clicked
 
 $("#button_gestures").click(function(){
   $("#content_form").hide()
-  $("#content_dialer").hide() 
+  $("#content_dialer").hide()
   $("#content_list").hide()
   $("#test_gestures").show()
 });
@@ -83,4 +83,13 @@ $("#button_pound").click(function(){
 
 $("#button_clear").click(function(){
   $("#dialer_entry").val("")
+});
+
+/* detecting mouse up or down in gesture_area */
+$("#gesture_area").mousedown(function(){
+  $("#gesture_output").text("mouse down")
+});
+
+$("#gesture_area").mouseup(function(){
+  $("#gesture_output").text("mouse up")
 });
