@@ -6,3 +6,7 @@ button { width: 150px; height: 75px; background: lightblue; color: white; margin
 
 /* make the button with ID "delete" red */
 /* #button_dialer { background: red; } */
+
+/* Gesture Tab Styling */
+#gesture_output { border: 3px dotted red; width: 150; margin-bottom: 5px; padding-top: 5px; padding-bottom: 5px; text-align: center; margin-left: 175px;}
+#gesture_area { border: 1px solid black; background: lightgrey; height: 300px; width: 300px; margin-left: 100px; margin-top: 25px}
