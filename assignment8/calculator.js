@@ -103,11 +103,13 @@ $(document).keypress(function(event) {
 			selectDown();
 	} else if (event.key == "w") {
 			selectUp();
+	} else if (event.key == "d") {
+			selectNext();
 	}*/
 })
 
 function flowThruButtons() {
-		intervalID = window.setInterval(selectNext, 500);
+		intervalID = window.setInterval(selectNext, 250);
 }
 
 /* calculator stuff below here */

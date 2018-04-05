@@ -39,14 +39,38 @@
 		</div>
 		<div id="comments">
 			<h2>About this app</h2>
-			<p>Include information here about your app.</p>
-			<ul>
-				<li>Instructions for using the app</li>
-				<li>Test results</li>
-				<li>Anything else you have tried out</li>
-			</ul>
-		</div>
+			<h3>Instructions</h3>
+				<p>Use spacebar to select an item.</p>
+			<h3>Description of test</h3>
+				<p>
+			  	I decided to make the calculator accessible by foot so I decided that spacebar will
+					be the key that your foot will press to select an item since it's biggest button on
+					the keyboard. The two conditions being tested is the timer being set to 250 milliseconds
+					versus 500 milliseconds. The first example problem used for testing is 1 + 4 / 7 * 0 * 2.
+					The second example problem used for testing is 5 + 3 - 6 - 8 / 9. This uses every single
+					key on the calculator. Each condition (500ms and 250ms) was tested six times (3 times for
+					each example.)
+		 		</p>
+			<h3>Results</h3>
+				<h4>500ms calculator</h4>
+					<p>
+						Problem 1: 57.77 seconds, 66.86 seconds, 98.40 seconds (1 error) <br>
+						Problem 2: 62.34 seconds, 76.94 seconds (1 error), 55.43 seconds
+					</p>
+				<h4>250ms calculator</h4>
+					<p>
+						Problem 1: 45.63 seconds (2 errors), 60.86 seconds (4 errors), 53.21 seconds (3 errors) <br>
+						Problem 2: 74.68 seconds (5 errors), 50.91 seconds (2 errors), 46.71 seconds (2 errors) <br>
+						<br>
+						The average time for the 500ms calculator is 69.62 seconds with an average error of 0.33 for the six trials. <br>
+						The average time for the 250ms calculator is 60.18 seconds with an average error of 3 for the six trials. <br><br>
+
+						So, we can conclude that the 250ms calculator is definately faster but less accurate and can also be more frustrating
+						to operate due to the much higher error rate. With sufficient practice using the 250ms calculator with your feet, however,
+						the 250ms calculator could be both faster and equally error prone as the 500ms calculator.
+					</p>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 		<script src="calculator.js" type="text/javascript"></script>
+		<body onload="flowThruButtons();">
 	</body>
 </html>
