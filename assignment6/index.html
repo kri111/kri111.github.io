@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="phone.css">
+		<a href="index-large.html">Toggle Low Vision Mode</a>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	</head>
+	<body>
+		<div id="tab_bar">
+			<button id="button_dialer">Dialer</button>
+			<button id="button_list">Contact List</button>
+			<button id="button_add">Add Contact</button>
+			<button id="button_gestures">About</button>
+		</div>
+		<div id="content">
+			<div id="content_dialer">
+				<br>
+				<input type="text" id="dialer_entry"></input>
+				<br><br>
+
+				<button id="button_1">1</button>
+				<button id="button_2">2</button>
+				<button id="button_3">3</button>
+				<br>
+
+				<button id="button_4">4</button>
+				<button id="button_5">5</button>
+				<button id="button_6">6</button>
+				<br>
+
+				<button id="button_7">7</button>
+				<button id="button_8">8</button>
+				<button id="button_9">9</button>
+				<br>
+
+				<button id="button_star">*</button>
+				<button id="button_0">0</button>
+				<button id="button_pound">#</button>
+				<br>
+
+				<br>
+				<button id="button_dial">Dial</button>
+				<button id="button_clear">Clear</button>
+			</div>
+			<div id="content_list">
+				<br>
+				<button id="name_1">Name 1</button>
+				<button id="name_2">Name 2</button>
+				<button id="name_3">Name 3</button>
+			</div>
+			<div id="content_form">
+				<form>
+					<b> Add Contact </b>
+					<br>
+					First name:<br>
+  				<input type="text" name="firstname"><br>
+  				Last name:<br>
+  				<input type="text" name="lastname"><br>
+					Phone Number:<br>
+					<input type="text" name="phonenumber"><br>
+					Email:<br>
+					<input type="text" name="email"><br>
+
+					<button id="add_contact">Add Contact</button>
+					<button id="btn_clear">Clear</button>
+				</form>
+			</div>
+			<div id="test_gestures">
+				<h1> Using iOS Magnifier </h1>
+					<iframe src="https://drive.google.com/file/d/1Yhk9kkGBFpgGgduwpj-MfsCzOdyMhm6g/preview" width="640" height="480"></iframe>
+				<h3> List of challenges </h3>
+					<ul>
+						<li> At about 1:10 in the video, you can see that I placed the magnifier at the bottom of the screen. When I tried to
+						move it back up to the top, I couldn't because my iPhone interpreted the gesture as trying to exit the app rather than
+					 	understanding that I wanted to move the magnifier.</li>
+						<li> It's hard to type using the magnifier.</li>
+						<li> It's fairly difficult to move around within the magnifier using three fingers. </li>
+					</ul>
+					<p> I used the magnifier without my glasses on (I have a very high prescription!) and overall I thought it was fairly useful
+						and well designed.</p>
+					<h3> Low Vision Mode </h3>
+							<p> I made the contrast between colors in Low Vision Mode much higher by setting black backgrounds
+							with white fonts or vice versa (in the case of an input box.) Also, the text size is much bigger
+							and you can easily toggle between the two modes by using the toggle button at the top of the webpage.</p>
+				<!--
+				<div id="gesture_output"> idle </div>
+				<div id="gesture_area"> </div>
+			-->
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="phone.js"></script>
+	</body>
+</html>
